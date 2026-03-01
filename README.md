@@ -1,12 +1,6 @@
-# butterGPT (MVP)
+# butterGPT
 
-Chrome Manifest V3 extension that adds a calm, dark‑mode “reading view” panel to ChatGPT web assistant messages. It mirrors the assistant’s content as it streams in, then upgrades the reading experience with consistent typography + clickable CTA tokens.
-
-- Read / Original tabs per assistant message
-- Streaming updates (no waiting for a full “mini app”)
-- CTA buttons that insert (or send) follow‑up prompts
-- Feedback modal (local queue + optional embedded Google Form)
-- Buy‑me‑a‑coffee button (configurable URL)
+A chrome extension to turn a chat bot into a visual experience using web UI elements.
 
 ## Run
 
