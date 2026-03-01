@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "butterGPT",
+  "description": "Turn LLM web UIs into a calm, beautiful, interactive animated reading experience.",
+  "version": "0.1.0",
+  "action": {
+    "default_title": "butterGPT",
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": ["storage", "tabs", "scripting"],
+  "host_permissions": ["https://chat.openai.com/*", "https://chatgpt.com/*"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/*", "https://chatgpt.com/*"],
+      "js": ["content-script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
